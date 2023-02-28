@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+
+:root {
+  --headerColor: #0000007e;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  /* border-radius: 50px; */
+  height: 100vh;
+  background: linear-gradient(115deg, #000000 0%, #00C508 55%, #000000 100%), linear-gradient(115deg, #0057FF 0%, #020077 100%), conic-gradient(from 110deg at -5% 35%, #000000 0deg, #FAFF00 360deg), conic-gradient(from 220deg at 30% 30%, #FF0000 0deg, #0000FF 220deg, #240060 360deg), conic-gradient(from 235deg at 60% 35%, #0089D7 0deg, #0000FF 180deg, #240060 360deg);
+  /* background-blend-mode: soft-light, soft-light, overlay, screen, normal; */
+  background-repeat: no-repeat;
+  transition: all .5s ease-in-out;
+  scrollbar-width: 0px;
+
+  background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF 0%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+  background-blend-mode: overlay, hard-light, overlay, normal;
+  background-blend-mode: normal, hard-light, overlay, normal;
+  background-image: url("./assets/svg/bg3.svg"), radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF 0%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+  background-color: #ec3f3f;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+/* body::before {
+  content: '';
+  background-image: url("/assets/svg/bg.svg");
+  position: absolute;
+  rotate: 90deg;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+
+
+
+h1 {
+  line-height: 1.1;
+}
+
+
+
+@media screen and (max-width:1020px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  .target h1 {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  @keyframes grow {
+    0% {
+      width: 0;
+      /* height: 0; */
+      font-size: 0px;
+    }
+
+    100% {
+      width: 100%;
+      /* height: 100%; */
+      font-size: 4vw;
+    }
+
+
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+    font-size: .7rem;
+  }
+
+
+
+  main {
+    width: 100vw;
+    backdrop-filter: none;
+    background-color: transparent;
+  }
+
+  main>div {
+    backdrop-filter: blur(10px);
+    background-color: #ffffffbb;
+    box-shadow: none;
+
+    padding: 1rem;
+    /* margin: 1rem; */
+  }
+
+  .score-board {
+    width: 100%;
+  }
+
+}

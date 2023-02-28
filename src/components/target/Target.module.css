@@ -1,0 +1,100 @@
+.target>h1 {
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.score,
+.target>section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score>h2,
+.target>section>h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.score span,
+.target>section>h2>span {
+    margin-top: .5rem;
+}
+
+
+@media screen and (max-width:1020px) {
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1rem;
+    }
+
+    .target h1 {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    @keyframes grow {
+        0% {
+            width: 0;
+            /* height: 0; */
+            font-size: 0px;
+        }
+
+        100% {
+            width: 100%;
+            /* height: 100%; */
+            font-size: 4vw;
+        }
+
+
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+        font-size: .7rem;
+    }
+
+    .target h1 {
+        font-size: 1rem;
+    }
+
+
+    main {
+        width: 100vw;
+        backdrop-filter: none;
+        background-color: transparent;
+    }
+
+    main>div {
+        backdrop-filter: blur(10px);
+        background-color: #ffffffbb;
+        box-shadow: none;
+
+        padding: 1rem;
+        /* margin: 1rem; */
+    }
+
+    .score-board {
+        width: 100%;
+    }
+
+}

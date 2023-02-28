@@ -1,0 +1,158 @@
+.ball {
+    aspect-ratio: 1/1;
+    width: 0;
+    /* height: 0; */
+    background: black;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 0vw;
+    font-weight: bold;
+    color: white;
+    /* transition: all .5s ease; */
+    align-self: center;
+    /* animation: grow 1s ease-in-out forwards; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* font-size: 5vw; */
+    transform: translateY(130px) rotate(-180deg);
+
+    /* animation: fall 1s ease-in-out forwards 1s; */
+
+    /* animation-name: fall, grow;
+    animation-duration: 1400ms, 700ms;
+    animation-delay: 0ms, 1400ms;
+
+    animation-timing-function: cubic-bezier(1, 0.1, 1, 1), ease-in-out;
+    animation-timing-function: cubic-bezier(0.73, 0.21, 1, 0.93), ease-in-out;
+    animation-timing-function: cubic-bezier(0.87, 0.39, 0.99, 0.83), ease-in-out;
+
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards; */
+    animation: grow-fall 1200ms ease-in-out forwards;
+}
+
+@keyframes grow-fall {
+    0% {
+        width: 0;
+        /* height: 0; */
+        font-size: 0px;
+        transform: translateY(130px) rotate(-180deg);
+
+    }
+
+    50% {
+        transform: translateY(130px) rotate(-180deg);
+
+    }
+
+    70% {
+        width: 100%;
+        /* height: 100%; */
+        font-size: 2.2vw;
+
+    }
+
+    100% {
+        width: 100%;
+        font-size: 2.2vw;
+
+        transform: translateY(0px) rotate(-180deg);
+
+    }
+
+
+
+}
+
+@keyframes grow {
+    0% {
+        width: 0;
+        /* height: 0; */
+        font-size: 0px;
+    }
+
+    100% {
+        width: 100%;
+        /* height: 100%; */
+        font-size: 2.2vw;
+    }
+
+
+}
+
+@keyframes fall {
+    0% {
+        width: 0%;
+        /* height: 100%; */
+
+        /* transform: translateY(-130px);
+         */
+        transform: translateY(130px) rotate(-180deg);
+
+    }
+
+    100% {
+        width: 100%;
+        /* height: 100%; */
+        transform: translateY(0px) rotate(-180deg);
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    @keyframes grow {
+        0% {
+            width: 0;
+
+            font-size: 0px;
+        }
+
+        100% {
+            width: 100%;
+            font-size: 4vw;
+        }
+
+
+    }
+
+    @keyframes grow-fall {
+        0% {
+            width: 0;
+            /* height: 0; */
+            font-size: 0px;
+            transform: translateY(130px) rotate(-180deg);
+
+        }
+
+        50% {
+            transform: translateY(130px) rotate(-180deg);
+
+        }
+
+        70% {
+            width: 100%;
+            /* height: 100%; */
+            font-size: 4vw;
+
+        }
+
+        100% {
+            width: 100%;
+            font-size: 4vw;
+
+            transform: translateY(0px) rotate(-180deg);
+
+        }
+
+
+
+    }
+
+
+
+
+}

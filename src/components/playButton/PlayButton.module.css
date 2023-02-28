@@ -1,0 +1,49 @@
+.btn-style {
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-block: .5rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(255, 56, 86);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    font-family: 'Press Start 2P', cursive;
+
+
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-style {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.btn-style:hover {
+    box-shadow: rgb(201, 46, 70) 6px 7px 0px 0px;
+    transform: translateY(-5px);
+    transition: 200ms;
+}
+
+.btn-style:not(:hover) {
+    box-shadow: none !important;
+}
+
+.btn-style:disabled {
+    background-color: rgba(91, 91, 91, 0.512) !important;
+    box-shadow: none !important;
+    transform: translateY(0px);
+
+
+}
+
+.btn-style:active {
+    background-color: rgb(255, 56, 86);
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px !important;
+    transform: translateY(0px);
+    transition: 200ms;
+}
