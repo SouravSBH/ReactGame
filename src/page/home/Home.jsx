@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <>
 
-            <header><h1>React Game</h1></header>
+            <header><h1>Game of Fortune</h1></header>
             <UIProvider>
                 <ModalComponent></ModalComponent>
                 <main>
