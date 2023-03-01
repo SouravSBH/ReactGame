@@ -20,3 +20,19 @@ export function uidGen(length = 16) {
     }
     return result;
 }
+
+export function setColor(maxAttempts, yourAttempts, forWhat) {
+    let color = "#000";
+    if (((maxAttempts - yourAttempts) < 6) && ((maxAttempts - yourAttempts) >= 3)) {
+        color = "#ffb700"
+    }
+    else if ((maxAttempts - yourAttempts) < 3) {
+        color = forWhat === "attempts" ? "red" : "#37ff00";
+    }
+    else {
+        color = "black"
+
+    }
+    return color;
+
+}
