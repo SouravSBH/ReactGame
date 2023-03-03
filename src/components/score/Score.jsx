@@ -14,7 +14,7 @@ export default function Score() {
         <div className={styles.score}>
             {/* {console.count("rerender")} */}
             <CurScore ></CurScore>
-            <h2 style={{ color: setColor(gameLogic.maxAttempts, gameLogic.yourAttempts, "attempts") }} className={styles.yourAttemptsH2}>Your Attempts:
+            <h2 style={{ color: setColor(gameLogic.maxAttempts, gameLogic.yourAttempts, "attempts") }} className={styles.yourAttemptsH2}>Attempts Left:
                 <span className={styles.attemptsValue}>{gameLogic.maxAttempts - gameLogic.yourAttempts}
                 </span>
             </h2>
