@@ -11,12 +11,9 @@ function ModalComponent() {
                     ui.showModal = false;
                     ui.disablePlayButton = false;
                     setUi({ ...ui });
-
-                }} className={`${styles.outer} ${styles.show} ${styles.modal}`}>
-                    <h1 style={{ backgroundColor: ui.modalColor }} className={`${styles.inner} ${styles.modal}`}>
-                        <div className={`${styles.modal} ${styles.main}`}>
-                            {ui.modalText}
-                        </div>
+                }} className={`${styles.outer} `}>
+                    <h1 style={{ backgroundColor: ui.modalColor }} className={`${styles.inner} `}>
+                        {ui.modalText}
                     </h1>
                 </div>
             }
